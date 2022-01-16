@@ -4,11 +4,11 @@
 
 
 This is a fork of https://github.com/DV8FromTheWorld/JAADec with the following changes:
-* Maven-based building.
+* Adjusted Maven-based building to work with Maven Central.
 * Fixed Java deprecations.
 * Fixed Javadoc errors.
-* Removed the Gradle build.
-* Rollout to Maven Central instead of shut-down jcenter.
+* Removed the Gradle build (DRY).
+* Rollout to Maven Central instead of shut-down [jcenter](https://blog.gradle.org/jcenter-shutdown).
 
 The credits go to the original author in-somnia.
 
