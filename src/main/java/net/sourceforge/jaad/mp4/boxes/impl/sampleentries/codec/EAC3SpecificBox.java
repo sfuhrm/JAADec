@@ -5,10 +5,9 @@ import net.sourceforge.jaad.mp4.MP4InputStream;
 
 /**
  * This box contains parameters for Extended AC-3 decoders. For more information
- * see the AC-3 specification "<code>ETSI TS 102 366 V1.2.1 (2008-08)</code>" at 
- * <a href="http://www.etsi.org/deliver/etsi_ts/102300_102399/102366/01.02.01_60/ts_102366v010201p.pdf>
- * http://www.etsi.org/deliver/etsi_ts/102300_102399/102366/01.02.01_60/ts_102366v010201p.pdf</a>.
- * 
+ * see the AC-3 specification "<code>ETSI TS 102 366 V1.2.1 (2008-08)</code>" at
+ * <a href="http://www.etsi.org/deliver/etsi_ts/102300_102399/102366/01.02.01_60/ts_102366v010201p.pdf">http://www.etsi.org/deliver/etsi_ts/102300_102399/102366/01.02.01_60/ts_102366v010201p.pdf</a>.
+ *
  * @author in-somnia
  */
 public class EAC3SpecificBox extends CodecSpecificBox {
@@ -54,10 +53,10 @@ public class EAC3SpecificBox extends CodecSpecificBox {
 	}
 
 	/**
-	 * This value indicates the data rate of the Enhanced AC-3 bitstream in 
+	 * This value indicates the data rate of the Enhanced AC-3 bitstream in
 	 * kbit/s. If the Enhanced AC-3 stream is variable bit rate, then this value
 	 * indicates the maximum data rate of the stream.
-	 * 
+	 *
 	 * @return the data rate
 	 */
 	public int getDataRate() {
@@ -65,9 +64,9 @@ public class EAC3SpecificBox extends CodecSpecificBox {
 	}
 
 	/**
-	 * This field indicates the number of independent substreams that are 
+	 * This field indicates the number of independent substreams that are
 	 * present in the Enhanced AC-3 bitstream.
-	 * 
+	 *
 	 * @return the number of independent substreams
 	 */
 	public int getIndependentSubstreamCount() {
@@ -77,7 +76,7 @@ public class EAC3SpecificBox extends CodecSpecificBox {
 	/**
 	 * This field has the same meaning and is set to the same value as the fscod
 	 * field in the independent substream.
-	 * 
+	 *
 	 * @return the 'fscod' values for all independent substreams
 	 */
 	public int[] getFscods() {
@@ -85,9 +84,9 @@ public class EAC3SpecificBox extends CodecSpecificBox {
 	}
 
 	/**
-	 * This field has the same meaning and is set to the same value as the bsid 
+	 * This field has the same meaning and is set to the same value as the bsid
 	 * field in the independent substream.
-	 * 
+	 *
 	 * @return the 'bsid' values for all independent substreams
 	 */
 	public int[] getBsids() {
@@ -96,9 +95,9 @@ public class EAC3SpecificBox extends CodecSpecificBox {
 
 	/**
 	 * This field has the same meaning and is set to the same value as the bsmod
-	 * field in the independent substream. If the bsmod field is not present in 
+	 * field in the independent substream. If the bsmod field is not present in
 	 * the independent substream, this field shall be set to 0.
-	 * 
+	 *
 	 * @return the 'bsmod' values for all independent substreams
 	 */
 	public int[] getBsmods() {
@@ -108,7 +107,7 @@ public class EAC3SpecificBox extends CodecSpecificBox {
 	/**
 	 * This field has the same meaning and is set to the same value as the acmod
 	 * field in the independent substream.
-	 * 
+	 *
 	 * @return the 'acmod' values for all independent substreams
 	 */
 	public int[] getAcmods() {
@@ -118,7 +117,7 @@ public class EAC3SpecificBox extends CodecSpecificBox {
 	/**
 	 * This field has the same meaning and is set to the same value as the lfeon
 	 * field in the independent substream.
-	 * 
+	 *
 	 * @return the 'lfeon' values for all independent substreams
 	 */
 	public boolean[] getLfeons() {
@@ -126,9 +125,9 @@ public class EAC3SpecificBox extends CodecSpecificBox {
 	}
 
 	/**
-	 * This field indicates the number of dependent substreams that are 
+	 * This field indicates the number of dependent substreams that are
 	 * associated with an independent substream.
-	 * 
+	 *
 	 * @return the number of dependent substreams for all independent substreams
 	 */
 	public int[] getDependentSubstreamCount() {
@@ -136,14 +135,15 @@ public class EAC3SpecificBox extends CodecSpecificBox {
 	}
 
 	/**
-	 * If there are one or more dependent substreams associated with an 
-	 * independent substream, this bit field is used to identify channel 
-	 * locations beyond those identified using the 'acmod' field that are 
-	 * present in the bitstream. The lowest 9 bits of the returned integer are 
-	 * flags indicating if a channel location is present. The flags are used 
-	 * according to the following table, where index 0 is the most significant 
+	 * If there are one or more dependent substreams associated with an
+	 * independent substream, this bit field is used to identify channel
+	 * locations beyond those identified using the 'acmod' field that are
+	 * present in the bitstream. The lowest 9 bits of the returned integer are
+	 * flags indicating if a channel location is present. The flags are used
+	 * according to the following table, where index 0 is the most significant
 	 * bit of all 9 used bits:
 	 * <table>
+	 * <caption>Substream locations</caption>
 	 * <tr><th>Bit</th><th>Location</th></tr>
 	 * <tr><td>0</td><td>Lc/Rc pair</td></tr>
 	 * <tr><td>1</td><td>Lrs/Rrs pair</td></tr>
@@ -155,7 +155,7 @@ public class EAC3SpecificBox extends CodecSpecificBox {
 	 * <tr><td>7</td><td>Cvh</td></tr>
 	 * <tr><td>8</td><td>LFE2</td></tr>
 	 * </table>
-	 * 
+	 *
 	 * @return the dependent substream locations for all independent substreams
 	 */
 	public int[] getDependentSubstreamLocation() {

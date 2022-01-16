@@ -55,12 +55,12 @@ public class ThreeGPPLocationBox extends ThreeGPPMetadataBox {
 	}
 
 	/**
-	 * The role of the place:<br />
+	 * The role of the place:<br>
 	 * <ol start="0">
 	 * <li>"shooting location"</li>
 	 * <li>"real location"</li>
 	 * <li>"fictional location"</li>
-	 * </ol><br />
+	 * </ol><br>
 	 * Other values are reserved. 
 	 * 
 	 * @return the role of the place

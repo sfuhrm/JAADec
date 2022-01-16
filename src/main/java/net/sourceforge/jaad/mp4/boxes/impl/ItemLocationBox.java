@@ -19,13 +19,14 @@ import net.sourceforge.jaad.mp4.boxes.FullBox;
  * or both of the offset and length may be implied:
  * <ul>
  * <li>If the offset is not identified (the field has a length of zero), then
- * the beginning of the file (offset 0) is implied.</li>
+ * the beginning of the file (offset 0) is implied.
  * <li>If the length is not specified, or specified as zero, then the entire
  * file length is implied. References into the same file as this metadata, or
  * items divided into more than one extent, should have an explicit offset and
  * length, or use a MIME type requiring a different interpretation of the file,
- * to avoid infinite recursion.</li>
- * 
+ * to avoid infinite recursion.
+ * </ul>
+ *
  * The size of the item is the sum of the extent lengths.
  *
  * The data-reference index may take the value 0, indicating a reference into
@@ -110,9 +111,9 @@ public class ItemLocationBox extends FullBox {
 	}
 
 	/**
-	 * The base offset provides a base value for offset calculations within the 
+	 * The base offset provides a base value for offset calculations within the
 	 * referenced data.
-	 * 
+	 *
 	 * @return the base offsets for all items
 	 */
 	public long[] getBaseOffset() {

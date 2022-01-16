@@ -5,10 +5,9 @@ import net.sourceforge.jaad.mp4.MP4InputStream;
 
 /**
  * This box contains parameters for AC-3 decoders. For more information see the
- * AC-3 specification "<code>ETSI TS 102 366 V1.2.1 (2008-08)</code>" at 
- * <a href="http://www.etsi.org/deliver/etsi_ts/102300_102399/102366/01.02.01_60/ts_102366v010201p.pdf>
- * http://www.etsi.org/deliver/etsi_ts/102300_102399/102366/01.02.01_60/ts_102366v010201p.pdf</a>.
- * 
+ * AC-3 specification "<code>ETSI TS 102 366 V1.2.1 (2008-08)</code>" at
+ * <a href="http://www.etsi.org/deliver/etsi_ts/102300_102399/102366/01.02.01_60/ts_102366v010201p.pdf">http://www.etsi.org/deliver/etsi_ts/102300_102399/102366/01.02.01_60/ts_102366v010201p.pdf</a>.
+ *
  * @author in-somnia
  */
 public class AC3SpecificBox extends CodecSpecificBox {
@@ -42,7 +41,7 @@ public class AC3SpecificBox extends CodecSpecificBox {
 	/**
 	 * This field has the same meaning and is set to the same value as the fscod
 	 * field in the AC-3 bitstream.
-	 * 
+	 *
 	 * @return the value of the 'fscod' field
 	 */
 	public int getFscod() {
@@ -50,9 +49,9 @@ public class AC3SpecificBox extends CodecSpecificBox {
 	}
 
 	/**
-	 * This field has the same meaning and is set to the same value as the bsid 
+	 * This field has the same meaning and is set to the same value as the bsid
 	 * field in the AC-3 bitstream.
-	 * 
+	 *
 	 * @return the value of the 'bsid' field
 	 */
 	public int getBsid() {
@@ -62,7 +61,7 @@ public class AC3SpecificBox extends CodecSpecificBox {
 	/**
 	 * This field has the same meaning and is set to the same value as the bsmod
 	 * field in the AC-3 bitstream.
-	 * 
+	 *
 	 * @return the value of the 'acmod' field
 	 */
 	public int getBsmod() {
@@ -72,7 +71,7 @@ public class AC3SpecificBox extends CodecSpecificBox {
 	/**
 	 * This field has the same meaning and is set to the same value as the acmod
 	 * field in the AC-3 bitstream.
-	 * 
+	 *
 	 * @return the value of the 'acmod' field
 	 */
 	public int getAcmod() {
@@ -82,7 +81,7 @@ public class AC3SpecificBox extends CodecSpecificBox {
 	/**
 	 * This field has the same meaning and is set to the same value as the lfeon
 	 * field in the AC-3 bitstream.
-	 * 
+	 *
 	 * @return the value of the 'lfeon' field
 	 */
 	public boolean isLfeon() {
@@ -90,9 +89,10 @@ public class AC3SpecificBox extends CodecSpecificBox {
 	}
 
 	/**
-	 * This field indicates the data rate of the AC-3 bitstream in kbit/s, as 
+	 * This field indicates the data rate of the AC-3 bitstream in kbit/s, as
 	 * shown in the following table:
 	 * <table>
+	 * <caption>Data rates of the AC-3 bitstream</caption>
 	 * <tr><th>bit rate code</th><th>bit rate (kbit/s)</th></tr>
 	 * <tr><td>0</td><td>32</td></tr>
 	 * <tr><td>1</td><td>40</td></tr>
@@ -114,7 +114,7 @@ public class AC3SpecificBox extends CodecSpecificBox {
 	 * <tr><td>17</td><td>576</td></tr>
 	 * <tr><td>18</td><td>640</td></tr>
 	 * </table>
-	 * 
+	 *
 	 * @return the bit rate code
 	 */
 	public int getBitRateCode() {

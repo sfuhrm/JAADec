@@ -81,8 +81,9 @@ public class TrackSelectionBox extends FullBox {
 	 * group. Each differentiating attribute is associated with a pointer to the
 	 * field or information that distinguishes the track.</p>
 	 *
-	 * <p>The following attributes are descriptive:
+	 * The following attributes are descriptive:
 	 * <table>
+	 * <caption>Attributes describing tracks</caption>
 	 * <tr><th>Name</th><th>Attribute</th><th>Description</th></tr>
 	 * <tr><td>Temporal scalability</td><td>'tesc'</td><td>The track can be
 	 * temporally scaled.</td></tr>
@@ -94,10 +95,12 @@ public class TrackSelectionBox extends FullBox {
 	 * spatially scaled.</td></tr>
 	 * <tr><td>Region-of-interest scalability</td><td>'resc'</td><td>The track
 	 * can be region-of-interest scaled.</td></tr>
-	 * </table></p>
+	 * </table>
 	 *
-	 * <p>The following attributes are differentiating:
-	 * <table><tr><th>Name</th><th>Attribute</th><th>Pointer</th></tr>
+	 * The following attributes are differentiating:
+	 * <table>
+	 * <caption>Differentiating atributes</caption>
+	 * <tr><th>Name</th><th>Attribute</th><th>Pointer</th></tr>
 	 * <tr><td>Codec</td><td>'cdec'</td><td>Sample Entry (in Sample Description
 	 * box of media track)</td></tr>
 	 * <tr><td>Screen size</td><td>'scsz'</td><td>Width and height fields of
@@ -112,13 +115,13 @@ public class TrackSelectionBox extends FullBox {
 	 * track divided by the duration in the track header box</td></tr>
 	 * <tr><td>Frame rate</td><td>'frar'</td><td>Number of samples in the track
 	 * divided by duration in the track header box</td></tr>
-	 * </table></p>
+	 * </table>
 	 *
-	 * <p>Descriptive attributes characterize the tracks they modify, whereas
+	 * Descriptive attributes characterize the tracks they modify, whereas
 	 * differentiating attributes differentiate between tracks that belong to
 	 * the same alternate or switch groups. The pointer of a differentiating
 	 * attribute indicates the location of the information that differentiates
-	 * the track from other tracks with the same attribute.</p>
+	 * the track from other tracks with the same attribute.
 	 */
 	public List<Long> getAttributes() {
 		return Collections.unmodifiableList(attributes);

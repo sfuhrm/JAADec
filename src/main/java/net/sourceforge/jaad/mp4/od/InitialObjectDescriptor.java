@@ -98,7 +98,7 @@ public class InitialObjectDescriptor extends Descriptor {
 
 	/**
 	 * An indication of the scene description profile required to process the
-	 * content associated with this InitialObjectDescriptor.<br />
+	 * content associated with this InitialObjectDescriptor.<br>
 	 * The value should be one of the following:
 	 * 0x00: reserved for ISO use
 	 * 0x01: ISO 14496-1 XXXX profile
@@ -115,7 +115,7 @@ public class InitialObjectDescriptor extends Descriptor {
 
 	/**
 	 * An indication of the audio profile required to process the content
-	 * associated with this InitialObjectDescriptor.<br />
+	 * associated with this InitialObjectDescriptor.<br>
 	 * The value should be one of the following:
 	 * 0x00: reserved for ISO use
 	 * 0x01: ISO 14496-3 XXXX profile
@@ -132,7 +132,7 @@ public class InitialObjectDescriptor extends Descriptor {
 
 	/**
 	 * An indication of the visual profile required to process the content
-	 * associated with this InitialObjectDescriptor.<br />
+	 * associated with this InitialObjectDescriptor.<br>
 	 * The value should be one of the following:
 	 * 0x00: reserved for ISO use
 	 * 0x01: ISO 14496-2 XXXX profile
@@ -149,7 +149,7 @@ public class InitialObjectDescriptor extends Descriptor {
 
 	/**
 	 * An indication of the graphics profile required to process the content
-	 * associated with this InitialObjectDescriptor.<br />
+	 * associated with this InitialObjectDescriptor.<br>
 	 * The value should be one of the following:
 	 * 0x00: reserved for ISO use
 	 * 0x01: ISO 14496-1 XXXX profile

@@ -27,22 +27,22 @@ import net.sourceforge.jaad.mp4.boxes.impl.ProgressiveDownloadInformationBox;
  * specific order of the content, the data needed for parsing (the sample
  * tables) may be at the end of the stream. In this case, random access is
  * needed and reading from an <code>InputSteam</code> will cause an exception.
- * Thus, whenever possible, a <code>RandomAccessFile</code> should be used for 
- * local files. Parsing from an <code>InputStream</code> is useful when reading 
+ * Thus, whenever possible, a <code>RandomAccessFile</code> should be used for
+ * local files. Parsing from an <code>InputStream</code> is useful when reading
  * from a network stream.
  *
  * Each <code>MP4Container</code> can return the used file brand (file format
  * version). Optionally, the following data may be present:
  * <ul>
  * <li>progressive download informations: pairs of download rate and playback
- * delay, see {@link #getDownloadInformationPairs() getDownloadInformationPairs()}</li>
+ * delay.</li>
  * <li>a <code>Movie</code></li>
  * </ul>
  *
- * Additionally it gives access to the underlying MP4 boxes, that can be 
- * retrieved by <code>getBoxes()</code>. However, it is not recommended to 
+ * Additionally it gives access to the underlying MP4 boxes, that can be
+ * retrieved by <code>getBoxes()</code>. However, it is not recommended to
  * access the boxes directly.
- * 
+ *
  * @author in-somnia
  */
 public class MP4Container {
