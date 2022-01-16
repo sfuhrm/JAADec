@@ -1,5 +1,9 @@
 # JAADec
-**This is a fork of https://sourceforge.net/projects/jaadec/ containing fixes to make it play nice with other Java Sound Providers.**
+
+This is a fork of https://github.com/DV8FromTheWorld/JAADec with the following changes:
+* Maven-based building.
+* Fixed Java deprecations.
+* Rollout to Maven Central instead of shut-down jcenter.
 
 The original project was licensed under Public Domain and as such this fork is also licensed under Public Domain. Use as you like!
 
@@ -11,31 +15,20 @@ https://bintray.com/dv8fromtheworld/maven/JAADec/view
 For Gradle:
 
 ```groovy
-repositories {
-  jcenter()
-}
 
 dependencies {
-  compile 'net.sourceforge.jaadec:jaad:0.8.6'
+  compile 'de.sfuhrm:jaad:0.8.7'
 }
 ```
 <p>
 For Maven:
 
 ```xml
-<repositories>
-  <repository>
-    <id>central</id>
-    <name>bintray</name>
-    <url>http://jcenter.bintray.com</url>
-  </repository>
-</repositories>
-
 <dependencies>
   <dependency>
-    <groupId>net.sourceforge.jaadec</groupId>
+    <groupId>de.sfuhrm</groupId>
     <artifactId>jaad</artifactId>
-    <version>0.8.6</version>
+    <version>0.8.7</version>
   </dependency>
 </dependencies>
 ```
