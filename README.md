@@ -11,7 +11,7 @@ This is a fork of https://github.com/DV8FromTheWorld/JAADec with the following c
 * Removed the Gradle build (DRY).
 * Rollout to Maven Central instead of shut-down [jcenter](https://blog.gradle.org/jcenter-shutdown).
 
-The credits go to the original author in-somnia.
+The credits go to the original author [in-somnia](https://sourceforge.net/u/in-somnia/profile/) who put this into the [public domain](https://sourceforge.net/p/jaadec/code/157/).
 
 The original project was licensed under Public Domain and as such this fork is also licensed under Public Domain. Use as you like!
 
