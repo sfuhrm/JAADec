@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.sfuhrm</groupId>
   <artifactId>jaad</artifactId>
   <name>JAAD</name>
   <description>JAAD is an AAC decoder and MP4 demultiplexer library written completely in Java. It uses no native libraries, is platform-independent and portable. It can read MP4 container from almost every input-stream (files, network sockets etc.) and decode AAC-LC (Low Complexity) and HE-AAC (High Efficiency/AAC+).</description>
-  <version>0.8.7-SNAPSHOT</version>
+  <version>0.8.7</version>
   <url>https://github.com/DV8FromTheWorld/JAADec</url>
   <licenses>
     <license>
@@ -46,6 +45,7 @@
     <connection>scm:git:git@github.com:sfuhrm/JAADec.git</connection>
     <developerConnection>scm:git:git@github.com:sfuhrm/JAADec.git</developerConnection>
     <url>scm:git:git@github.com:sfuhrm/JAADec.git</url>
+    <tag>jaad-0.8.7</tag>
   </scm>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
