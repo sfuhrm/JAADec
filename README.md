@@ -5,6 +5,7 @@
 
 This is a fork of https://github.com/DV8FromTheWorld/JAADec with the following changes:
 * Adjusted Maven-based building to work with Maven Central.
+* Requires JDK 8 now since building for older targets is no longer working with current JDKs.
 * Fixed Java deprecations.
 * Fixed Javadoc errors.
 * Removed the Gradle build (DRY).
