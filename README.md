@@ -1,5 +1,8 @@
 # JAADec
 
+![Maven Central](https://img.shields.io/maven-central/v/de.sfuhrm/jaad)
+
+
 This is a fork of https://github.com/DV8FromTheWorld/JAADec with the following changes:
 * Maven-based building.
 * Fixed Java deprecations.
