@@ -3,7 +3,11 @@
 This is a fork of https://github.com/DV8FromTheWorld/JAADec with the following changes:
 * Maven-based building.
 * Fixed Java deprecations.
+* Fixed Javadoc errors.
+* Removed the Gradle build.
 * Rollout to Maven Central instead of shut-down jcenter.
+
+The credits go to the original author in-somnia.
 
 The original project was licensed under Public Domain and as such this fork is also licensed under Public Domain. Use as you like!
 
