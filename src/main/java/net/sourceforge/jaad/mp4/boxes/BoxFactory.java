@@ -415,7 +415,7 @@ public class BoxFactory implements BoxTypes {
 			}
 			else {
 				try {
-					box = cl.newInstance();
+					box = cl.getConstructor().newInstance();
 				}
 				catch(Exception e) {
 					LOGGER.log(Level.SEVERE, "BoxFactory: could not instantiate box "+typeToString(type), e);
