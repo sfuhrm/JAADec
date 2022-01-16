@@ -1,7 +1,7 @@
 # JAADec
 
 ![Maven Central](https://img.shields.io/maven-central/v/de.sfuhrm/jaad)
-
+![GitHub Release Date](https://img.shields.io/github/release-date/sfuhrm/JAADec)
 
 This is a fork of https://github.com/DV8FromTheWorld/JAADec with the following changes:
 * Adjusted Maven-based building to work with Maven Central.
